@@ -119,7 +119,7 @@ class Character:
         return self.base_attack + sum(item.attack for item in self.equipped_items)
 
     @property
-    def defense(self) -> None:
+    def defense(self) -> int:
         return self.base_defense + sum(item.defense for item in self.equipped_items)
 
 
